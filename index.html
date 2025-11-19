@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>🏋️ Fitness Tracker Dashboard</header>
+
+  <div class="container">
+    <div class="stats">
+      <div class="card">
+        <h3>Steps</h3>
+        <p id="steps">0</p>
+      </div>
+      <div class="card">
+        <h3>Calories</h3>
+        <p id="calories">0</p>
+      </div>
+      <div class="card">
+        <h3>Distance (km)</h3>
+        <p id="distance">0</p>
+      </div>
+    </div>
+
+    <div class="progress-container">
+      <h3>Daily Goal Progress</h3>
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+      <p id="progressText">0% of goal reached</p>
+    </div>
+
+    <div class="activity-input">
+      <input type="number" id="inputSteps" placeholder="Enter steps..." />
+      <button onclick="addSteps()">Add</button>
+    </div>
+  </div>
+
+  <footer>© 2025 Fitness Tracker | Built with 💪 by You</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
